@@ -26,12 +26,19 @@ The `towers_of_hanoi` direction includes:
 * `README.md`  
     this file
 * `towers-v1-simple.py`  
-    a text-based solution to the Towers of Hanoi problem
+    This is a text-based solution to the Towers of Hanoi problem.
 * `towers-v2-list_based.py`  
-    a list-based solution, in which three lists are used to keep track
-    of the state of each tower. These lists are then printed out after
-    every mode of a disk, allowing us to view a simple representation 
+    This is a list-based solution in which three lists are used to keep 
+    track of the state of each tower. These lists are then printed out 
+    after every mode of a disk, allowing us to view a simple representation 
     of the status of each tower.
+* `towers-v3-vertical_text.py`  
+    This is the same algorithmic solution as v2 above (using lists), but
+    the display() method has been modified to present the results
+    vertically, a more intuitive format that matches with the physical
+    process of moving disks. This version is an important step toward
+    working toward a purely graphics-based representation of the solution.
+    
 
 The Towers of Hanoi Problem
 ---------------------------
