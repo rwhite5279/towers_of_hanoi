@@ -25,8 +25,13 @@ The `towers_of_hanoi` direction includes:
 
 * `README.md`  
     this file
-* `towers.py`  
+* `towers-v1-simple.py`  
     a text-based solution to the Towers of Hanoi problem
+* `towers-v2-list_based.py`  
+    a list-based solution, in which three lists are used to keep track
+    of the state of each tower. These lists are then printed out after
+    every mode of a disk, allowing us to view a simple representation 
+    of the status of each tower.
 
 The Towers of Hanoi Problem
 ---------------------------
@@ -87,12 +92,11 @@ To run `towers.py`:
 
         $ cd path/to/towers_of_hanoi
 
-2. use Python3 to run the program `towers.py`:
+2. use Python3 to run the desired program:
 
-        $ python3 towers.py
+        $ python3 towers-v2-list_based.py
 
 The program will display a solution to the Towers of Hanoi problem for a
-small number of disks (4). The program may be easily modified to solve
-for a different number of disks.
+given number of disks.
 
 
