@@ -38,7 +38,14 @@ The `towers_of_hanoi` direction includes:
     vertically, a more intuitive format that matches with the physical
     process of moving disks. This version is an important step toward
     working toward a purely graphics-based representation of the solution.
-    
+* `towers-v4-object-vertical_text.py`  
+    This solution offers the same algorithm, but with a Tower class used
+    to manage the list of disks. The advantage of writing a Tower class is
+    that the lisk manipulation is hidden from the user. The disadvantage is
+    that, for programmers comfortable with lists, the class is another
+    layer of abstraction. This is still just a vertical column of values
+    used to represent the towers. We need to move on to the graphics!
+
 
 The Towers of Hanoi Problem
 ---------------------------

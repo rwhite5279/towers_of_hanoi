@@ -24,7 +24,7 @@ def display():
     print("B | ",b)
     print("C | ",c)
     print()
-    sleep(0.01)
+    # sleep(0.01)
 
 def move(depth, source, intermediate, destination):
     """Determines the next move that should be made to move a disk."""
@@ -51,7 +51,7 @@ def move(depth, source, intermediate, destination):
 def main():
     print("Solving the 'Towers of Hanoi' problem using lists to maintain")
     print("the state of the disks on the towers.")
-    height = 8
+    height = 10
     # Initialize all three towers
     global a, b, c
     a = []
