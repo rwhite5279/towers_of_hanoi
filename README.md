@@ -45,6 +45,18 @@ The `towers_of_hanoi` direction includes:
     that, for programmers comfortable with lists, the class is another
     layer of abstraction. This is still just a vertical column of values
     used to represent the towers. We need to move on to the graphics!
+* `towers-v5-list-turtle_based.py`
+    This solution is truly graphical based, with each disk on the tower
+    represented by a rectangle of proportional width, implemented as a "turtle"
+    using Python's turtle graphics. One of the major challenges in this version
+    is getting the appropriate disk (turtle) to display at an appropriate 
+    position on the screen. Miscellaneous pixel adjustments are present 
+    throughout this version. One of the nice things about this system is the
+    fact that the screen doesn't need to be redrawn for each disk move: a disk
+    can be moved more-or-less directly to its new position on an adjacent tower.
+    Although the current version is just a tower of 6 and with a turtle speed of 2,
+    those values can be adjusted in the program. Set the turtle speed to 0 to have
+    it proceed as quickly as possible!
 
 
 The Towers of Hanoi Problem
