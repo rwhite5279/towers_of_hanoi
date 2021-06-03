@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
 """
-towers.py
+towers-v1-simple.py
 This program uses recursion to display a solution to the Towers of Hanoi
 problem. See the accompanying README.md file for further information on
 this project, the Towers of Hanoi problem, and our strategy for solving
 it here.
-
-@author Richard White, rwhite@crashwhite.com
-@version 2017-07-18
 """
+
+__author__ = 'Richard White, rwhite@crashwhite.com'
+__version__ = '2017-07-18'
 
 def move(height, source, intermediate, destination):
     """Determines the next move that should be made to move a disk."""
@@ -26,8 +26,6 @@ def move(height, source, intermediate, destination):
         # Now move the remaining disks over using the source tower as
         # an intermediate!
         move(height - 1, intermediate, source, destination)
-
-
 
 def main():
     print("Solving the 'Towers of Hanoi' problem")

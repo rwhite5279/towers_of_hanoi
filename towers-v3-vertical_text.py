@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 
 """
-towers.py
+towers-v3-vertical_text.py
+
 This program uses recursion to display a solution to the Towers of Hanoi
 problem. See the accompanying README.md file for further information on
 this project, the Towers of Hanoi problem, and our strategy for solving
 it here.
 
-In this version, we'll display disk values on the screen so that we have
-a crude graphical representation of the status of the towers as we go.
-
-@author Richard White, rwhite@crashwhite.com
-@version 2017-07-18
+In this version, we'll display disk values on the screen in a vertical
+orientation so that we have a crude graphical representation of the 
+status of the towers as we go.
 """
+
+__author__ = 'Richard White, rwhite@crashwhite.com'
+__version__ = '2017-07-18'
 
 from os import system
 from time import sleep
@@ -20,7 +22,12 @@ from time import sleep
 def display():
     system("clear")
     print("\nMoves: ",move_count,"\n")
-    """Displays the state of the global lists a, b, c."""
+    """Displays the state of the global lists a, b, c as a series
+    of vertical columns. Index i counts down from the maximum height
+    (depth) of the columns; for any given column A, B, or C, if 
+    index i has reached the height of the column (ie the length of 
+    that columns list), we'll display that value.
+    """
     for i in range(height - 1, -1, -1):
         # A
         if i < len(a):
@@ -65,8 +72,6 @@ def move(depth, source, intermediate, destination):
         # an intermediate!
         move(depth - 1, intermediate, source, destination)
 
-
-
 def main():
     global a, b, c, height, move_count
     print("Solving the 'Towers of Hanoi' problem using lists to maintain")
@@ -86,6 +91,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 

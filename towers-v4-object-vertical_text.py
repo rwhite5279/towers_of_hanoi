@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 
 """
-towers.py
+towers-v4-object-vertical_text.py
 This program uses recursion to display a solution to the Towers of Hanoi
 problem. See the accompanying README.md file for further information on
 this project, the Towers of Hanoi problem, and our strategy for solving
 it here.
 
 In this version, we'll use Tower objects (instead of a list) to represent
-the disks on each tower.
-
-@author Richard White, rwhite@crashwhite.com
-@version 2017-07-18
+the disks on each vertical tower. The appearance of the towers produced 
+in the display, however, is exactly the same as the previous version.
 """
+
+__author__ = 'Richard White, rwhite@crashwhite.com'
+__version__ = '2017-07-18'
 
 from os import system
 from time import sleep
@@ -95,8 +96,6 @@ def move(depth, source, intermediate, destination):
         # an intermediate!
         move(depth - 1, intermediate, source, destination)
 
-
-
 def main():
     global a, b, c, height, move_count
     print("Solving the 'Towers of Hanoi' problem using a Tower class to ")
@@ -116,6 +115,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 

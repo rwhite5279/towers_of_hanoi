@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 """
-towers.py
+towers-v5-list-turtle_based.py
+
 This program uses recursion to display a solution to the Towers of Hanoi
 problem. See the accompanying README.md file for further information on
 this project, the Towers of Hanoi problem, and our strategy for solving
@@ -18,10 +19,10 @@ Also, we've removed the display() function in this version, in favor of
 manipulating the disks (turtles) directly, either in the main() function
 or in the move function. Moving an individual turtle is much faster than
 redwrawing all of them each time.
-
-@author Richard White, rwhite@crashwhite.com
-@version 2017-07-18
 """
+
+__author__ = 'Richard White, rwhite@crashwhite.com'
+__version__ = '2017-07-18'
 
 from os import system
 from time import sleep
@@ -70,7 +71,7 @@ def main():
     global a, b, c, height, move_count
     print("Solving the 'Towers of Hanoi' problem using lists to maintain")
     print("the state of the disks on the towers.")
-    depth = 7           # used to track depth of recursion
+    depth = 10          # used to track depth of recursion
     height = depth      # used for height of graphical display
     move_count = 0      # tracks total number of disk moves for display
     turtle.setup(1100,800)
@@ -83,7 +84,7 @@ def main():
         t = turtle.Turtle()
         t.shape("square")
         t.penup()
-        t.speed(7)
+        t.speed(0)
         t.turtlesize(0.9, i, 0)     # 0.9 is the turtle height
         # Where do we "goto"?
         t.goto(-400, -i * 20)       # -i * 20 determines vertical position

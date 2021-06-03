@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 """
-towers.py
+towers-v2-list_version.py
+
 This program uses recursion to display a solution to the Towers of Hanoi
 problem. See the accompanying README.md file for further information on
 this project, the Towers of Hanoi problem, and our strategy for solving
@@ -9,10 +10,10 @@ it here.
 
 In this version, we'll display disk values on the screen so that we have
 a crude graphical representation of the status of the towers as we go.
-
-@author Richard White, rwhite@crashwhite.com
-@version 2017-07-18
 """
+
+__author__ = 'Richard White, rwhite@crashwhite.com'
+__version__ = '2017-07-18'
 
 from os import system
 from time import sleep
@@ -24,7 +25,7 @@ def display():
     print("B | ",b)
     print("C | ",c)
     print()
-    # sleep(0.01)
+    # sleep(0.01)   # Uncomment this to slow down the display
 
 def move(depth, source, intermediate, destination):
     """Determines the next move that should be made to move a disk."""
@@ -47,7 +48,6 @@ def move(depth, source, intermediate, destination):
         move(depth - 1, intermediate, source, destination)
 
 
-
 def main():
     print("Solving the 'Towers of Hanoi' problem using lists to maintain")
     print("the state of the disks on the towers.")
@@ -65,6 +65,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
 
